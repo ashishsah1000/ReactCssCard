@@ -1,0 +1,23 @@
+*{
+  margin:0px 0px;
+}
+.App{
+  margin-top: 40px;;
+}
+.App > .card{
+  float: left;
+}
+.nav{
+  width: 100vw;
+  height: 55px;
+
+  position: absolute;
+  top:0;
+  background-color: black;
+  color: ghostwhite;
+}
+.nav h1{
+  margin-left: 40px;
+  font-size: 20px;
+  margin-top: 15px;
+}

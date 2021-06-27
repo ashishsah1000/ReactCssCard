@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+body{
+font-family: 'Open Sans Condensed', sans-serif;}
+
+:root{
+--back: rgb(23, 56, 83);
+}  
+.back{
+  position:relative;
+  height:240px;
+  width:250px;
+  top:-120px;
+  left:45px;
+  background: var(--back);
+  border-radius:15px;
+  margin:20px 20px;
+  transition:.3s ease;
+  z-index:2;
+box-shadow: 5px 6px 17px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 5px 6px 17px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 6px 17px -2px rgba(0,0,0,0.75);
+}
+.card{
+    width: 300px;
+    height: 333px;
+  padding:10px 10px;
+  cursor:pointer;  
+  margin: 20px 20px;
+}
+.picture{
+  background:url("../images/img-1.jfif");
+  background-size:cover;
+  height:180px;
+  width:240px;
+  position:relative;
+  top:60px;
+  left:50px;
+  border-radius:15px;
+  z-index:3;
+  box-shadow: 1px 1px 17px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 1px 17px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 17px -2px rgba(0,0,0,0.75);
+  
+}
+.card:hover >.back{
+    height:280px;
+    width:270px;
+  top:-155px;
+  left:15px;
+}
+.info{
+  width:200px;
+  background: none;
+  height:50px;
+position:relative;
+  top:13px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.pic img{
+  height:40px;
+  width:40px;
+  border : 5px solid var(--back);
+  border-radius:15px;
+  flex:1;
+}
+.data {
+  margin-top:-3px;
+  margin-left:5px;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: flex-start;
+  flex:2;
+  letter-spacing:1.5px;
+  width: 100px;
+}
+.data span{
+  margin-top:-0px !important;
+  font-size:14px;
+}
+.data h4{
+  font-size:18px;
+}
+.more{
+   margin-top:-20px;
+   position: relative;
+   left:30px;   
+
+}
+
+.more a{
+  padding:10px 10px;
+  font-weight:800;
+  color:white;
+  border-radius:50%;
+  text-align:right;  
+  text-decoration:none;
+  font-size:24px;
+
+}
+.icons{
+    position: relative;
+    background: transparent;
+    top:8px;
+    color:white;
+    width: 40%;
+    left:155px;
+    transform: rotate(-30deg);
+    transform-origin: 0mm;
+    transition: .7s ease;
+    opacity: 0;
+    font-size: 0px;
+}
+.icons img{
+    width: 0px;
+    margin:5px 5px;
+    
+}
+.icons .iconContainer{
+    width: 5px;
+    display: flex;
+    
+}
+.cardContainer:hover > .icons{
+    transform: rotate(0deg);
+    opacity: 1;
+}
+.cardContainer:hover > .icons img{
+    width: 15px;
+}
+.cardContainer{
+    height:180px;
+  width:24  0px;
+  background-color: transparent;;
+}
+
+
+
+
+
+@media only screen and (max-width: 1050px) {
+    body {
+      background-color: ghostwhite;
+    }
+    .card{
+        max-height:250px;
+        max-width:250px;
+      }
+      .back{
+        height:190px;
+    width:200px;
+    top:-120px;
+    left:10px;
+      }
+      .card:hover >.back{
+        width:230px;
+        height:230px;
+        top:-155px;
+        left:-24px;
+      }
+      .picture{
+        height:140px;
+        width:200px;
+        top:20px;
+        left:10px;
+      }
+      .info .more{
+        left:0px;   
+      }
+      .cardContainer{
+        height:140px;
+        width:200px;
+      background-color: transparent;;
+    }
+    .info{margin-top: -10px;;}
+    .icons{
+        left:115px;
+    }
+    .icons .fab{
+        font-size: 15px ;;
+    }
+    
+  }
+  .card-1 .picture{
+    background: url("../images/img-1.jfif");
+    background-size: cover;
+  }
+  .card-1 .back{
+    background: rgb(180, 89, 5) !important;
+  }
+  .card-1 img{
+    border-color:rgb(180, 89, 5) ;
+  }
+.text-dark{
+    color:rgba(0,0,0,0.75);
+}
